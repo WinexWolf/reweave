@@ -1,5 +1,8 @@
 # reweave
 
+[![CI](https://github.com/WinexWolf/reweave/actions/workflows/ci.yml/badge.svg)](https://github.com/WinexWolf/reweave/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
 **Lossless partial editing for structured documents.** Edit a friendly
 projection of a document, get back a **minimal diff**, and keep everything the
 editor doesn't model — **verbatim**.
