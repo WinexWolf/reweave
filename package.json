@@ -27,7 +27,7 @@
     "fast-check": "^3.23.1",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
-    "vitest": "^2.1.8",
+    "vitest": "^4.1.10",
     "yaml": "^2.9.0"
   },
   "peerDependencies": { "yaml": ">=2" },
