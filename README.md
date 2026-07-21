@@ -190,7 +190,7 @@ npm install
 npm run dev
 ```
 
-Live demo: **[link once Pages is enabled](#)** (deploys from `playground/` via CI).
+Live demo: **(https://winexwolf.github.io/reweave/)** (deploys from `playground/` via CI).
 
 ## Install
 
