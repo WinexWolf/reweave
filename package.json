@@ -1,0 +1,63 @@
+{
+  "name": "reweave",
+  "version": "0.1.0",
+  "description": "Lossless partial editing for structured documents — edit a projection, get a minimal diff, keep everything else verbatim.",
+  "keywords": [
+    "lens",
+    "bidirectional",
+    "lossless",
+    "diff",
+    "json-patch",
+    "round-trip",
+    "projectional-editing",
+    "ast",
+    "rule-engine",
+    "structured-editor"
+  ],
+  "license": "MIT",
+  "author": "Anukriti Jaiswal",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./yaml": {
+      "types": "./dist/yaml/index.d.ts",
+      "import": "./dist/yaml/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "example": "tsx examples/package-json-editor.ts"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "fast-check": "^3.23.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8",
+    "yaml": "^2.9.0"
+  },
+  "peerDependencies": {
+    "yaml": ">=2"
+  },
+  "peerDependenciesMeta": {
+    "yaml": {
+      "optional": true
+    }
+  }
+}
